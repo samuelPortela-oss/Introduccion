@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PokerMind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__brand">
+      <img class="header__logo" src="assets/poker-cards.webp" alt="PokerMind Logo" />
+      <span class="header__title">PokerMind</span>
+    </div>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#Docs">Docs</a></li>
+        <li><a href="#Forums">Forums</a></li>
+        <li><a href="#PokerMind-Web">PokerMind Web</a></li>
+        <li><a href="#Add-Ons">Add-Ons</a></li>
+        <li><a href="#Shared-Decks">Shared Decks</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+        <img class="hero__image" src="assets/hero-languages.jpg" alt="Girl working on a laptop" />
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Remembering is easier with <span class="outlined">PokerMind</span>
+          </h1>
+          <p class="hero__description">
+            PokerMind is a flashcard program that helps you spend more time on challenging material, and less on what
+            you already know.
+          </p>
+          <div class="hero__download">
+            <button class="hero__download-btn">Download Now</button>
+          </div>
+          <img class="hero__section" src="assets/section.svg" alt="Section Social" />
+        </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+      <h2 class="advantages__title section-title"><strong>Advantages</strong></h2>
+      <div class="advantages__content">
+        <div class="advantages__item">
+          <img class="advantages__icon" src="assets/advantage1.svg" alt="Advantage 1" />
+          <h3 class="advantages__item-title">Synchronization</h3>
+          <p class="advantages__item-description">
+            PokerMind uses a scientifically proven method to optimize your learning and retention.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img class="advantages__icon" src="assets/advantage2.svg" alt="Advantage 2" />
+          <h3 class="advantages__item-title">Media support</h3>
+          <p class="advantages__item-description">
+            Add images, audio, and video to your flashcards for a richer learning experience.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img class="advantages__icon" src="assets/advantage3.svg" alt="Advantage 3" />
+          <h3 class="advantages__item-title">Customization</h3>
+          <p class="advantages__item-description">
+            Create your own flashcards with text, images, and audio to suit your learning style.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="basic" id="basic">
+      <h2 class="basic__title section-title"><strong>Basic Concepts</strong></h2>
+      <p>PokerMind supports complex workflow management for efficient learning.</p>
+      <div class="basic__content">
+        <div class="basic__item">
+          <img class="basic__icon" src="assets/basic1.svg" alt="Basic 1" />
+          <h3 class="basic__item-title">Create a Deck</h3>
+          <p class="basic__item-description">
+            Start by creating a new deck for your flashcards. You can organize your decks by subject or topic.
+          </p>
+        </div>
+        <div class="basic__item">
+          <img class="basic__icon" src="assets/basic2.svg" alt="Basic 2" />
+          <h3 class="basic__item-title">Add Flashcards</h3>
+          <p class="basic__item-description">
+            Add flashcards to your deck with text, images, and audio. Customize the content to suit your learning needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+          <div class="contact__form-wrapper">
+            <form class="contact__form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="contact__input"
+                  aria-label="Your name"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="contact__input"
+                  aria-label="Email"
+                  inputmode="email"
+                  autocomplete="email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Your website (If exists)"
+                  class="contact__input"
+                  aria-label="Your website"
+                  inputmode="url"
+                  autocomplete="url"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Your phone number"
+                  class="contact__input"
+                  aria-label="Your phone"
+                  inputmode="tel"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  placeholder="How can I help?*"
+                  class="contact__textarea"
+                  aria-label="How can I help?"
+                ></textarea>
+              </div>
+              <div class="contact__actions">
+                <button type="submit" class="contact__button">
+                  Get In Touch
+                </button>
+                <div class="contact__socials">
+                  <a href="#" class="social-link" aria-label="Facebook">
+                    <img src="assets/facebook.svg" alt="Facebook" />
+                  </a>
+                  <a href="#" class="social-link" aria-label="Reddit">
+                    <img src="assets/reddit.svg" alt="Reddit" />
+                  </a>
+                  <a href="#" class="social-link" aria-label="Twitter">
+                    <img src="assets/twitter.svg" alt="Twitter" />
+                  </a>
+                  <a href="#" class="social-link" aria-label="Discord">
+                    <img src="assets/discord.svg" alt="Discord" />
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+          <footer>
+            <div class="footer__info">
+              <h2 class="footer__title section-title">
+                <strong>
+                  Your future polyglot starts here.
+                </strong>
+              </h2>
+              <p class="footer__description">
+                Download the app and take your learning to the next level.
+              </p>
+            </div>
+            <br>
+            <div class="footer__details">
+              <a href="mailto:pokermind@mail.com" class="footer__email">
+                pokermind@mail.com
+              </a>
+              <p class="footer__phone">1234567890</p>
+            </div>
+            <br>
+            <div class="footer-copyright-america"> 
+              © All rights reserved by PokerMind. Latin America 2026.
+            </div>
+          </div>
+      </footer>
+
+  </main>
+</body>
+
+</html>
