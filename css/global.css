@@ -204,13 +204,10 @@ body {
 }
 
 .basic__item {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-        "item-icon title"
-        "item-icon description";
-    align-items: start;
-    gap: var(--spacing-8);
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+    gap: var(--spacing-16);
 }
 
 .basic__icon {
@@ -225,6 +222,7 @@ body {
     font-weight: 600;
     color: var(--primary-white);
     grid-area: title;
+    text-align: center;
 
 }
 
@@ -245,14 +243,25 @@ body {
         margin: 0 auto;
     }
 
+    .basic__item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "item-icon title"
+            "item-icon description";
+        align-items: start;
+        gap: var(--spacing-8);
+    }
+
     .basic__item-title {
-        margin-top: 100px; 
+        margin-top: 100px;
+        text-align: left;
     }
 
     .basic__item-description {
         max-width: 400px;
         margin-bottom: 100px;
-       
+
     }
 
 }
