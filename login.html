@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - PokerMind</title>
+    <link rel="icon" type="image/png" href="assets/Favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/global.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__brand">
+            <a href="index.html">
+                <img class="header__logo" src="assets/poker-cards.webp" alt="PokerMind Logo" />
+            </a>
+            <span class="header__title">PokerMind</span>
+        </div>
+
+        <nav class="header__nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero auth-hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Login to <span class="outlined">PokerMind</span></h1>
+            </div>
+        </section>
+
+        <section class="auth-page">
+            <div class="auth-card">
+                <h2 class="auth-card__title">Welcome back</h2>
+                <p class="auth-card__text">Enter your details to continue with your progress.</p>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input id="login-email" class="contact__input" type="email" name="email" placeholder="Email"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input id="login-password" class="contact__input" type="password" name="password"
+                            placeholder="Password" required />
+                    </div>
+                    <button type="submit" class="hero__download-btn auth-btn">Log in</button>
+                </form>
+                <p class="auth-footer">Don't have an account yet? <a href="signup.html">Sign up</a></p>
+                <a class="back-home-btn" href="index.html">← Back to Home</a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer__info">
+                <h2 class="footer__title section-title">
+                    <strong>
+                        Your future polyglot starts here.
+                    </strong>
+                </h2>
+                <p class="footer__description">
+                    Download the app and take your learning to the next level.
+                </p>
+            </div>
+            <br>
+            <div class="footer__details">
+                <a href="mailto:pokermind@mail.com" class="footer__email">
+                    pokermind@mail.com
+                </a>
+                <p class="footer__phone">1234567890</p>
+            </div>
+            <br>
+            <div class="footer-copyright-america">
+                © All rights reserved by PokerMind. Latin America 2026.
+            </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

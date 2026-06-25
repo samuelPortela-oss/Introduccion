@@ -54,6 +54,31 @@ body {
     display: none;
 }
 
+@media (min-width: 425px) {
+
+    .header__nav,
+    .header__nav ul {
+        display: flex;
+        gap: var(--spacing-8);
+    }
+
+    #Home {
+        display: none;
+    }
+
+    .header__nav a {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary-black);
+        text-decoration: none;
+        flex-direction: left;
+    }
+
+    .header__nav a:hover {
+        color: var(--primary-red);
+    }
+}
+
 @media (min-width: 768px) {
 
     .header__nav,
@@ -63,7 +88,7 @@ body {
     }
 
     .header__nav a {
-        font-size: auto;
+        font-size: 16px;
         font-weight: 600;
         color: var(--primary-black);
         text-decoration: none;
@@ -112,7 +137,9 @@ body {
 
 .hero__image {
     width: 100%;
-    height: auto;
+    height: 50vh;
+    max-height: 50vh;
+    object-fit: cover;
     object-position: center;
 
 }
@@ -138,23 +165,14 @@ body {
     transition: background-color 0.3s ease;
 }
 
-@media (min-width: 768px) {}
-
 /* --- ADVANTAGES SECTION --- */
-.advantages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--spacing-32);
-    padding: 0 var(--spacing-32) var(--spacing-32);
-}
 
 .advantages__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: var(--spacing-16);
+    margin: var(--spacing-32);
 }
 
 .advantages__item {
@@ -266,6 +284,8 @@ body {
 
 }
 
+
+
 /* --- CONTACT SECTION --- */
 
 .contact {
@@ -359,16 +379,6 @@ body {
         /* More space on desktop */
     }
 
-    .contact__form-wrapper {
-        flex: 1;
-        order: 1;
-        /* Form on the left if needed, or default order */
-    }
-
-    .contact__info {
-        flex: 1;
-        order: 2;
-    }
 
     .contact__actions {
         flex-direction: row;
@@ -378,7 +388,98 @@ body {
     }
 }
 
+/* --- AUTH SECTION --- */
 
+.hero.auth-hero {
+    background-color: var(--zinc-100);
+    padding: 64px 0 24px;
+}
+
+.hero.auth-hero .hero__content {
+    max-width: 720px;
+    text-align: center;
+}
+
+.auth-page {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-40) var(--spacing-24) var(--spacing-60);
+    background-color: var(--zinc-100);
+}
+
+.auth-card {
+    width: min(560px, 100%);
+    border-radius: 32px;
+    padding: 40px 36px;
+    background-color: var(--primary-white);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card__title {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    line-height: 1.05;
+    color: var(--primary-black);
+}
+
+.auth-card__text {
+    margin: var(--spacing-16) 0 var(--spacing-32);
+    color: var(--primary-neutral);
+    line-height: 1.75;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+}
+
+.auth-form label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary-black);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.hero__download-btn.auth-btn {
+    width: 100%;
+}
+
+.auth-footer {
+    margin-top: var(--spacing-24);
+    color: var(--primary-neutral);
+    font-size: 0.95rem;
+}
+
+.auth-footer a {
+    color: var(--primary-red);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+.back-home-btn {
+    display: inline-flex;
+    margin-top: var(--spacing-24);
+    color: var(--primary-neutral);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.back-home-btn:hover {
+    color: var(--primary-black);
+}
+
+
+/* --- FOOTER SECTION --- */
 
 footer {
     text-align: center;
